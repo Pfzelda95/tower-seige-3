@@ -1,0 +1,23 @@
+if(this.body.speed>8){
+         World.remove(world,this.body)
+         push();
+
+         strokeWeight(3)
+         fill(246,142,95);
+         this.visibility = this.visibility-5;
+         tint(255,this.visibility,255);
+         rect(pos.x,pos.y,30,40);
+         pop();
+        }
+        else{
+         push();
+         strokeWeight(3)
+         fill(246,142,95);
+         
+         
+         
+         rect(pos.x,pos.y,this.width,this.height);
+         translate(this.body.position.x, this.body.position.y);
+         pop();
+         
+        }
